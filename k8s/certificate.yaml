@@ -1,0 +1,14 @@
+apiVersion: cert-manager.io/v1
+
+kind: Certificate
+metadata:
+  name: brainrotnotes-com-tls
+spec:
+  secretName: brainrotnotes-com
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: brainrotnotes.com
+  dnsNames:
+    - brainrotnotes.com
+    - www.brainrotnotes.com
