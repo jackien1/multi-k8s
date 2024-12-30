@@ -12,7 +12,7 @@ spec:
     - hosts:
         - brainrotnotes.com
         - www.brainrotnotes.com
-        secretName: brainrotnotes.com
+      secretName: brainrotnotes.com
   ingressClassName: nginx
   rules:
     - host: brainrotnotes.com
